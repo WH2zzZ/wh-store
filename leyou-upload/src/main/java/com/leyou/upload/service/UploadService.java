@@ -30,6 +30,9 @@ public class UploadService {
     private FastFileStorageClient fastFileStorageClient;
 
     public String uploadImg(MultipartFile file) {
+        if(file != null) {
+            return null;
+        }
 
         String originalFilename = file.getOriginalFilename();
 
